@@ -1,20 +1,22 @@
 export default function Home() {
    return (
       <div className="w-screen">
-         <section className="h-screen flex items-center bg-amber-300 justify-center -z-50">
-            <h1 className="text-6xl font-bold">Hero Section</h1>
+         {/* Hero — transparent so cube shows through */}
+         <section className="h-screen flex items-start justify-center pt-24">
+            <h1 className="text-6xl font-bold text-white mix-blend-difference">Hero Section</h1>
          </section>
 
-         <section className="h-screen flex items-center justify-center">
-            <h1 className="text-6xl font-bold">About Section</h1>
+         {/* These sections are solid — they cover the cube as you scroll */}
+         <section className="relative h-screen flex items-center justify-center bg-purple-400 z-10">
+            <h1 className="text-6xl font-bold text-white">About Section</h1>
          </section>
 
-         <section className="h-screen flex items-center justify-center bg-blue-300">
-            <h1 className="text-6xl font-bold">Projects Section</h1>
+         <section className="relative h-screen flex items-center justify-center bg-rose-400 z-10">
+            <h1 className="text-6xl font-bold text-white">Projects Section</h1>
          </section>
 
-         <section className="h-screen flex items-center justify-center bg-green-300">
-            <h1 className="text-6xl font-bold">Contact Section</h1>
+         <section className="relative h-screen flex items-center justify-center bg-teal-400 z-10">
+            <h1 className="text-6xl font-bold text-white">Contact Section</h1>
          </section>
       </div>
    );

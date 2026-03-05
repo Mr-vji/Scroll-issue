@@ -7,15 +7,15 @@ export default function Scene() {
    return (
       <div className="fixed inset-0">
          <Canvas
-            camera={{ position: [0, 0, 5], fov: 30 }}
-            gl={{ alpha: true, pointerEvents: "none" }}
+            id="vji"
+            camera={{ position: [0, 0, 8], fov: 30 }}
+            gl={{ alpha: true }}
+            style={{ background: "transparent" }}
          >
             <ScrollControls pages={4} damping={0.2}>
-               {/* HTML layer — z-index LOW */}
-               <Scroll html style={{ width: "100%", zIndex: -1000 }}>
+               <Scroll html>
                   <Home />
                </Scroll>
-
                <Experience />
             </ScrollControls>
          </Canvas>
